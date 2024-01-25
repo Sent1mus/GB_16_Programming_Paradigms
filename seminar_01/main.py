@@ -5,7 +5,7 @@ import timeit
 def sort_list_imperative(numbers):
     for i in range(len(numbers)):
         max_index = i
-        for j in range(i + 1, len(numberqs)):
+        for j in range(i + 1, len(numbers)):
             if numbers[max_index] < numbers[j]:
                 max_index = j
         numbers[i], numbers[max_index] = numbers[max_index], numbers[i]
